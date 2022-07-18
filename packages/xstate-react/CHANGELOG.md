@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.1
+
+### Patch Changes
+
+- [#3456](https://github.com/statelyai/xstate/pull/3456) [`131d429ab`](https://github.com/statelyai/xstate/commit/131d429ab350aaca371c4c7974829c621a50c024) Thanks [@davidkpiano](https://github.com/davidkpiano)! - Add `shallowEqual` helper comparator function.
+
 ## 3.0.0
 
 ### Major Changes

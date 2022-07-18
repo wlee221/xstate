@@ -1,5 +1,17 @@
 # xstate
 
+## 4.32.2
+
+### Patch Changes
+
+- [#3178](https://github.com/statelyai/xstate/pull/3178) [`6badd2ba3`](https://github.com/statelyai/xstate/commit/6badd2ba3642391bee640aa4914003ad57f2e703) Thanks [@davidkpiano](https://github.com/davidkpiano)! - Added a dev-only error when `forwardTo` accidentally ends up trying to forward an event to an undefined actor. Such a situation indicates a logical error and risks an infinite loop.
+
+* [#3422](https://github.com/statelyai/xstate/pull/3422) [`e35493f59`](https://github.com/statelyai/xstate/commit/e35493f59d277ca57f0982417d5ba3bca0a352ed) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with parallel regions not always being correctly reentered on external transitions of the containing parallel state targeting another region within that parallel state.
+
+- [#3447](https://github.com/statelyai/xstate/pull/3447) [`e93754d7a`](https://github.com/statelyai/xstate/commit/e93754d7a65d8c143bcb0070e8412ca4ebc9e523) Thanks [@davidkpiano](https://github.com/davidkpiano)! - The types for `state.nextEvents` are now properly typed to the actual event types of the machine. Original PR: #1115 (Thanks @alexreardon!)
+
+* [#3424](https://github.com/statelyai/xstate/pull/3424) [`88d540eb8`](https://github.com/statelyai/xstate/commit/88d540eb8e0b659c9621cc5c365bd626a000c1d7) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with targeted ancestors not being correctly reentered during external transitions.
+
 ## 4.32.1
 
 ### Patch Changes
